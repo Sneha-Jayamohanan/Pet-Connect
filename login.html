@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login — PetConnect</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="auth.css"/>
+</head>
+<body style="cursor:auto;">
+
+<!-- SPLIT LAYOUT -->
+<div class="auth-page">
+
+  <!-- Left visual panel -->
+  <div class="auth-visual">
+    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=900&q=85&fit=crop" alt="pets"/>
+    <div class="auth-visual-overlay">
+      <div class="auth-visual-quote">
+        Every pet deserves a<br/><em>loving home.</em>
+      </div>
+      <div class="auth-visual-sub">Sign in and find your perfect companion today.</div>
+    </div>
+  </div>
+
+  <!-- Right form panel -->
+  <div class="auth-form-panel">
+    <div class="auth-form-inner">
+
+      <div class="auth-logo">
+        <div class="auth-logo-icon">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=72&q=80&fit=crop" alt="logo"/>
+        </div>
+        PetConnect
+      </div>
+
+      <h2 class="auth-title">Welcome Back</h2>
+      <p class="auth-subtitle">Sign in to browse and adopt your forever friend.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" placeholder="abc@email.com" autocomplete="email"/>
+          <span class="form-error" id="emailErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Your password" autocomplete="current-password"/>
+          <span class="form-error" id="passErr"></span>
+        </div>
+        <button type="submit" class="btn btn-forest btn-submit">Sign In →</button>
+      </form>
+
+      <div class="form-footer-link" style="margin-top:20px;">
+        Don't have an account? <a href="signup.html">Sign Up Free</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>

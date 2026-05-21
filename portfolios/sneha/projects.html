@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Sneha Jayamohanan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="inner-page">
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html#home" class="logo">Sneha<span>.</span></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#portfolio">Projects</a></li>
+                    <li><a href="index.html#certificates">Certificates</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="projects-main">
+        <div class="page-header">
+            <h1>All <span>Projects</span></h1>
+            <p>A deep dive into my recent work and explorations.</p>
+        </div>
+
+        <div class="detailed-projects" id="project1">
+            <div class="project-detail-card">
+                <div class="detail-img">
+                    <img src="eye_tracking_project.png" alt="Dementia Detection">
+                </div>
+                <div class="detail-content">
+                    <h2>Dementia Detection via Eye Tracking</h2>
+                    <div class="tech-stack">
+                        <span>Python</span><span>PyGame</span><span>Computer Vision</span>
+                    </div>
+                    <p>This project aims to analyze image data, specifically focusing on eye-related features for
+                        potential use in dementia detection. The algorithm detects the pupil and iris through image
+                        processing, calculating specific features like dilation even in challenging conditions like
+                        glare or partial occlusion. The application includes user-friendly instructions for beginners
+                        and a clear interface to view the calculated results via a stimulus engine built with PyGame.
+                    </p>
+                    <a href="#" class="btn btn-primary mt-3">Cannot Access</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="detailed-projects reverse" id="project2">
+            <div class="project-detail-card">
+                <div class="detail-img">
+                    <img src="image.png" alt="Samadhan Setu Web App" class="poster-img">
+                </div>
+                <div class="detail-content">
+                    <h2>Samadhan Setu</h2>
+                    <div class="tech-stack">
+                        <span>Web Development</span><span>HTML/CSS</span><span>Civic Tech</span>
+                    </div>
+                    <p>Designed and developed "Samadhan Setu", a dedicated web application aimed at bridging the gap
+                        between citizens and the government. The platform provides an accessible, intuitive interface
+                        for people to report various local issues and infrastructure problems, ensuring transparency and
+                        enabling authorities to prioritize and address civic challenges efficiently.</p>
+                    <a href="https://github.com/Sneha-Jayamohanan/SamadhanSetu" class="btn btn-primary mt-3">View
+                        Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="detailed-projects" id="project3">
+            <div class="project-detail-card">
+                <div class="detail-img">
+                    <img src="map_project.png" alt="Guardian Angel App">
+                </div>
+                <div class="detail-content">
+                    <h2>Guardian Angel</h2>
+                    <div class="tech-stack">
+                        <span>OpenStreetMap</span><span>React</span>
+                    </div>
+                    <p>Refactored the core map visualization component for the Guardian Angel application. The project
+                        uses OpenStreetMap tiles to eliminate API key
+                        dependencies and usage limits, providing a robust, error-free interactive map for end-users.</p>
+                    <a href="https://github.com/Sneha-Jayamohanan/Guardian-angel" class="btn btn-primary mt-3">View
+                        Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-link-container">
+            <a href="index.html" class="btn btn-outline">&larr; Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sneha Jayamohanan..</p>
+        </div>
+    </footer>
+</body>
+
+</html>

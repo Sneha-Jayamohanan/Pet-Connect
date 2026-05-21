@@ -1,0 +1,67 @@
+/* ============================================================
+   auth.css — Login & Signup Page Styles
+   ============================================================ */
+
+/* Split-layout: left image, right form */
+.auth-page {
+  min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;
+}
+
+/* Left decorative panel */
+.auth-visual {
+  position: relative; overflow: hidden;
+  background: var(--forest-deep);
+}
+.auth-visual img {
+  width: 100%; height: 100%; object-fit: cover;
+  opacity: .55; filter: saturate(.7);
+}
+.auth-visual-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(160deg, rgba(14,32,24,.7) 0%, rgba(27,61,43,.5) 100%);
+  display: flex; flex-direction: column;
+  justify-content: flex-end; padding: 52px 48px;
+}
+.auth-visual-quote {
+  font-family: var(--font-d); font-size: 2.2rem; font-weight: 700;
+  color: #FAF7F1; line-height: 1.2; margin-bottom: 16px;
+}
+.auth-visual-quote em { color: var(--gold-pale); font-style: italic; }
+.auth-visual-sub { font-size: .88rem; color: rgba(250,247,241,.55); }
+
+/* Right form panel */
+.auth-form-panel {
+  display: flex; align-items: center; justify-content: center;
+  padding: 60px 48px; background: var(--ivory);
+}
+.auth-form-inner { width: 100%; max-width: 420px; }
+
+.auth-logo {
+  font-family: var(--font-d); font-size: 1.5rem; font-weight: 700;
+  color: var(--forest); display: flex; align-items: center;
+  gap: 8px; margin-bottom: 36px;
+}
+.auth-logo-icon {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: var(--forest); overflow: hidden;
+}
+.auth-logo-icon img { width: 100%; height: 100%; object-fit: cover; }
+
+.auth-title    { font-family: var(--font-d); font-size: 2rem; font-weight: 700; margin-bottom: 6px; }
+.auth-subtitle { font-size: .9rem; color: var(--text-muted); margin-bottom: 32px; }
+
+
+
+/* Submit button full-width */
+.btn-submit {
+  width: 100%; justify-content: center;
+  padding: 14px; font-size: .95rem; border-radius: var(--r-md);
+  margin-top: 4px;
+}
+
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 800px) {
+  .auth-page   { grid-template-columns: 1fr; }
+  .auth-visual { display: none; }
+  .auth-form-panel { padding: 48px 24px; min-height: 100vh; }
+}

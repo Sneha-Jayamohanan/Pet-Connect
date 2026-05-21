@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adopt a Pet — PetConnect</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="adopt.css"/>
+</head>
+<body>
+
+<div id="cursor"></div>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=72&q=80&fit=crop" alt="logo"/>
+      </div>
+      PetConnect
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pets.html">Browse Pets</a></li>
+      <li><span id="userGreet"></span></li>
+    </ul>
+    <button id="logoutBtn">Sign Out</button>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- ADOPT LAYOUT -->
+<div class="adopt-page">
+
+  <!-- Left: pet info -->
+  <div class="adopt-pet-panel">
+    <div class="adopt-pet-img">
+      <img id="adoptPetImg" src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=85&fit=crop" alt="pet"/>
+    </div>
+    <div class="adopt-pet-name" id="adoptPetName">—</div>
+    <div class="adopt-pet-breed" id="adoptPetBreed">—</div>
+    <div class="adopt-promise">
+      🛡️ <strong>Our Promise:</strong> All our pets are health-checked before adoption. Our team is available to guide you through the entire process and answer any questions you may have.
+    </div>
+  </div>
+
+  <!-- Right: form or success -->
+  <div>
+
+    <!-- FORM (shown by default) -->
+    <div class="adopt-form-card" id="adoptFormCard">
+      <h2 class="adopt-form-title">Adoption Application</h2>
+      <p class="adopt-form-sub">Fill in the details below and we'll be in touch within 24 hours!</p>
+
+      <form id="adoptForm" novalidate>
+        <div class="form-group">
+          <label>Pet Name</label>
+          <input type="text" id="formPetName" readonly placeholder="Auto-filled"/>
+        </div>
+        <div class="form-group">
+          <label for="adoptUserName">Your Full Name *</label>
+          <input type="text" id="adoptUserName" placeholder="Your full name"/>
+          <span class="form-error" id="nameErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="adoptEmail">Email Address *</label>
+          <input type="email" id="adoptEmail" placeholder="your@email.com"/>
+          <span class="form-error" id="emailErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="adoptPhone">Phone Number (optional)</label>
+          <input type="tel" id="adoptPhone" placeholder="+91 00000 00000"/>
+        </div>
+        <div class="form-group">
+          <label for="adoptHome">Home Type</label>
+          <select id="adoptHome">
+            <option value="">— Select your home type —</option>
+            <option>Apartment / Flat</option>
+            <option>House with garden</option>
+            <option>House without garden</option>
+            <option>Farm / Large property</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="adoptMessage">Why do you want to adopt? (optional)</label>
+          <textarea id="adoptMessage" rows="3" placeholder="Tell us a little about yourself and your home…" style="resize:vertical;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;padding:14px;">
+          Submit Application →
+        </button>
+      </form>
+
+      <div style="margin-top:16px;text-align:center;">
+        <a href="pets.html" style="font-size:.88rem;color:var(--text-muted);">← Back to Browse Pets</a>
+      </div>
+    </div>
+
+    <!-- SUCCESS (hidden until form submitted) -->
+    <div class="adopt-success" id="adoptSuccess">
+      <span class="success-icon">🎉</span>
+      <h2 class="success-title">Application Submitted!</h2>
+      <p class="success-msg">
+        Wonderful, <strong id="successName"></strong>!<br/><br/>
+        Your application to adopt <strong id="successPet"></strong> has been received.
+        Our team will review it and contact you within 24 hours to arrange a meet-and-greet!
+      </p>
+      <div class="success-btns">
+        <a href="pets.html" class="btn btn-forest">Browse More Pets</a>
+        <a href="index.html" class="btn btn-outline">Go Home</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div>Made with ❤️ by <strong>PetConnect</strong></div>
+  <a href="index.html">← Home</a>
+</footer>
+
+<script src="adopt.js"></script>
+</body>
+</html>

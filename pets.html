@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse Pets — PetConnect</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="pets.css"/>
+</head>
+<body>
+
+<div id="cursor"></div>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=72&q=80&fit=crop" alt="logo"/>
+      </div>
+      PetConnect
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pets.html" class="active">Browse Pets</a></li>
+      <li><span id="userGreet"></span></li>
+    </ul>
+    <button id="logoutBtn">Sign Out</button>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="browse-header">
+  <div class="browse-header-inner">
+    <h1>Browse <em>All Pets</em></h1>
+    
+  </div>
+</div>
+
+<!-- CONTROLS -->
+<div class="controls-bar">
+  <div class="search-wrap">
+    <svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/>
+    </svg>
+    <input type="text" id="searchInput" placeholder="Search by name, breed, location…"/>
+    <button class="search-clear" id="searchClear">✕</button>
+  </div>
+  <div class="filter-row" id="filterPills"></div>
+  <div class="results-label" id="resultsLabel">Loading…</div>
+</div>
+
+<!-- PET GRID (filled by pets.js) -->
+<div class="pet-grid" id="petGrid">
+  <div class="loading-state">
+    <div class="loading-dot"></div>
+    <div class="loading-dot" style="animation-delay:.15s"></div>
+    <div class="loading-dot" style="animation-delay:.30s"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div>Made with ❤️ by <strong>PetConnect</strong> </div>
+  <a href="index.html">← Back to Home</a>
+</footer>
+
+<script src="pets.js"></script>
+</body>
+</html>

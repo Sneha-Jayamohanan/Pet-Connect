@@ -1,0 +1,64 @@
+/* ============================================================
+   adopt.css — Adoption Form Page Styles
+   ============================================================ */
+
+.adopt-page {
+  max-width: 1300px; margin: 0 auto;
+  padding: 60px 52px 80px;
+  display: grid; grid-template-columns: 1fr 1.1fr;
+  gap: 52px; align-items: start;
+}
+
+/* Left: pet info panel */
+.adopt-pet-panel {
+  position: sticky; top: 100px;
+}
+.adopt-pet-img {
+  width: 100%; aspect-ratio: 4/3; border-radius: var(--r-xl);
+  overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 24px;
+}
+.adopt-pet-img img { width: 100%; height: 100%; object-fit: cover; }
+.adopt-pet-name { font-family: var(--font-d); font-size: 2rem; font-weight: 700; margin-bottom: 6px; }
+.adopt-pet-breed { color: var(--text-muted); font-size: .9rem; margin-bottom: 20px; }
+.adopt-promise {
+  background: var(--forest-faint); border: 1px solid rgba(27,61,43,.15);
+  border-radius: var(--r-md); padding: 18px 20px;
+  font-size: .85rem; line-height: 1.7; color: var(--text-mid);
+}
+.adopt-promise strong { color: var(--forest-mid); }
+
+/* Right: form card */
+.adopt-form-card {
+  background: var(--surface); border-radius: var(--r-xl);
+  padding: 44px 48px; box-shadow: var(--shadow-md);
+}
+.adopt-form-title { font-family: var(--font-d); font-size: 1.9rem; font-weight: 700; margin-bottom: 6px; }
+.adopt-form-sub   { color: var(--text-muted); font-size: .9rem; margin-bottom: 32px; }
+
+/* Success state */
+.adopt-success {
+  display: none; text-align: center;
+  background: var(--surface); border-radius: var(--r-xl);
+  padding: 72px 48px; box-shadow: var(--shadow-md);
+  animation: popIn .5s cubic-bezier(.175,.885,.32,1.275) forwards;
+}
+.adopt-success.show { display: block; }
+@keyframes popIn {
+  from { opacity: 0; transform: scale(.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.success-icon { font-size: 4rem; margin-bottom: 20px; display: block; }
+.success-title {
+  font-family: var(--font-d); font-size: 2rem; font-weight: 700;
+  color: var(--forest-mid); margin-bottom: 12px;
+}
+.success-msg  { color: var(--text-muted); line-height: 1.75; margin-bottom: 32px; font-size: .95rem; }
+.success-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .adopt-page { grid-template-columns: 1fr; padding: 36px 20px 60px; gap: 32px; }
+  .adopt-pet-panel { position: static; }
+  .adopt-form-card { padding: 32px 24px; }
+  .adopt-success   { padding: 52px 24px; }
+}

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Deva Nandan R</title>
+    <meta name="description" content="A modern portfolio showcasing projects in AI, ML, IoT, and Web Development.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Fixed Full-Page Background Photo (blue glass effect) -->
+    <div class="bg-photo"></div>
+
+    <!-- Background Elements for Glassmorphism -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact" class="btn btn-outline">Let's Talk</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <span class="greeting">Hi, my name is</span>
+            <h1 class="hero-title">Deva Nandan <span class="gradient-text">R</span></h1>
+            <h2 class="hero-subtitle">B.Tech Student in AI & DS.</h2>
+            <p class="hero-desc">
+                I'm a passionate student diving deep into Artificial Intelligence so I can eventually automate myself
+                out of a job. I love solving problems I created myself, and calling the results "impactful digital
+                solutions".
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content glass-panel">
+                <div class="about-text">
+                    <p>Hello! I'm Deva Nandan, currently pursuing my B.Tech degree in Artificial Intelligence and
+                        Machine Learning. My journey in tech started with a profound curiosity about how intelligent
+                        systems work and how the web connects us all.</p>
+                    <p>Whether it's writing clean, efficient code, exploring the depths of deep learning, or leading a
+                        team toward a common goal, I bring enthusiasm and a problem-solving mindset to everything I do.
+                        I am constantly learning and looking for opportunities to apply my skills to real-world
+                        challenges.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <!-- Profile Photo -->
+                        <img src="about_profile.jpg" alt="Deva Nandan R" class="about-profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical & Soft Skills</h2>
+            <p class="section-subtitle">Here are the areas where I shine:</p>
+
+            <div class="skills-grid">
+                <div class="skill-card glass-panel">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>General Coding</li>
+                    </ul>
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="skill-icon">🧠</div>
+                    <h3>AI & Tech</h3>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Internet of Things (IoT)</li>
+                        <li>Data Structures</li>
+                    </ul>
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>DBMS & Databases</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Oracle DB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card glass-panel" onclick="openModal('iot-project-details')"
+                    style="cursor: pointer;">
+                    <div class="project-img-container">
+                        <div class="project-placeholder-img"
+                            style="background: linear-gradient(135deg, #FF6B6B, #556270);">IoT Scanner</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-eyebrow">Hardware & AI</span>
+                            <h3 class="project-title">Exam Phone Detectors (IoT)</h3>
+                        </div>
+                        <p class="project-desc">An innovative IoT-based project designed to detect unauthorized mobile
+                            phones in examination halls. Utilizes sensor networks and intelligent data processing to
+                            maintain academic integrity.</p>
+                        <ul class="project-tech">
+                            <li>IoT Networks</li>
+                            <li>Python</li>
+                            <li>Hardware Integration</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/DNR5995" class="project-link" target="_blank"
+                                rel="noopener noreferrer" onclick="event.stopPropagation()">GitHub</a>
+                            <a href="javascript:void(0)" class="project-link"
+                                onclick="openModal('iot-project-details')">Learn More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-panel" onclick="openModal('petconnect-project-details')"
+                    style="cursor: pointer;">
+                    <div class="project-img-container">
+                        <div class="project-placeholder-img"
+                            style="background: linear-gradient(135deg, #00C9FF, #92FE9D);">petConnect</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-eyebrow">Web Development</span>
+                            <h3 class="project-title">petConnect</h3>
+                        </div>
+                        <p class="project-desc">A compassionate web platform built to facilitate online pet adoption.
+                            Connects shelters with loving homes through a beautiful, easy-to-use interface.</p>
+                        <ul class="project-tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Web Design</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/DNR5995" class="project-link" target="_blank"
+                                rel="noopener noreferrer" onclick="event.stopPropagation()">GitHub</a>
+                            <a href="javascript:void(0)" class="project-link"
+                                onclick="openModal('petconnect-project-details')">Learn More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card glass-panel" onclick="openModal('ecg-project-details')"
+                    style="cursor: pointer;">
+                    <div class="project-img-container">
+                        <div class="project-placeholder-img"
+                            style="background: linear-gradient(135deg, #7c3aed, #3b82f6);">ECG Predictor</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-eyebrow">Deep Learning</span>
+                            <h3 class="project-title">Heart Attack Prediction</h3>
+                        </div>
+                        <p class="project-desc">A deep learning model designed to predict the likelihood of heart
+                            attacks by analyzing Electrocardiogram (ECG) data, leveraging neural networks for early
+                            medical diagnosis.</p>
+                        <ul class="project-tech">
+                            <li>Deep Learning</li>
+                            <li>Python</li>
+                            <li>ECG Analysis</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/DNR5995" class="project-link" target="_blank"
+                                rel="noopener noreferrer" onclick="event.stopPropagation()">GitHub</a>
+                            <a href="javascript:void(0)" class="project-link"
+                                onclick="openModal('ecg-project-details')">Learn More</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-container glass-panel">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <p class="contact-desc" style="margin-bottom: 1.5rem;">
+                I am always open to discussing new projects, creative ideas, or opportunities to be part of your
+                visions. Feel free to reach out to me using the details below!
+            </p>
+
+            <div class="contact-details"
+                style="display: inline-block; text-align: left; margin-bottom: 2.5rem; font-size: 1.1rem; color: var(--text-primary); line-height: 2;">
+                <div><span style="font-size: 1.25rem; margin-right: 12px; vertical-align: middle;">📞</span>+91
+                    9400204911</div>
+                <div><span style="font-size: 1.25rem; margin-right: 12px; vertical-align: middle;">✉️</span><a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=devanandar808@gmail.com" target="_blank"
+                        rel="noopener noreferrer"
+                        style="color: var(--text-primary); text-decoration: none;">devanandar808@gmail.com</a></div>
+                <div><span style="font-size: 1.25rem; margin-right: 12px; vertical-align: middle;">📍</span>Kochuveetil,
+                    Pada South, Karunagappally</div>
+                <div><span style="font-size: 1.25rem; margin-right: 12px; vertical-align: middle;">💻</span><a
+                        href="https://github.com/DNR5995" style="color: var(--text-primary); text-decoration: none;"
+                        target="_blank" rel="noopener noreferrer">github.com/DNR5995</a></div>
+                <div><span style="font-size: 1.25rem; margin-right: 12px; vertical-align: middle;">🔗</span><a
+                        href="https://www.linkedin.com/in/deva-nandan-rajeevan-b524833a9"
+                        style="color: var(--text-primary); text-decoration: none;" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a></div>
+            </div><br>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=devanandar808@gmail.com&su=Hello%20Deva%20Nandan!"
+                target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Send an Email</a>
+        </div>
+    </section>
+
+    <!-- Project Modal & Content Data -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Hidden Data for Modal -->
+    <div id="iot-project-details" style="display: none;">
+        <h2>📡 Exam Phone Detection System (IoT)</h2>
+        <p>The Exam Phone Detector is a smart IoT-based surveillance system designed to identify the presence of
+            unauthorized mobile devices in restricted environments such as examination halls. The project addresses a
+            real-world problem—academic malpractice—by leveraging wireless signal detection, embedded systems, and
+            intelligent alert mechanisms.</p>
+
+        <h3>🔍 Project Overview</h3>
+        <p>In modern examination settings, preventing the use of mobile phones is a major challenge. Traditional methods
+            like manual checking are inefficient, time-consuming, and prone to human error. This project introduces an
+            automated, scalable, and real-time solution using IoT technology to detect active mobile devices based on
+            radio frequency (RF) emissions.</p>
+        <p>The system continuously monitors the surrounding environment for RF signals typically emitted by mobile
+            phones during communication activities such as calls, messages, or data transmission. Once a signal is
+            detected, the system immediately triggers alerts and logs the event for further action.</p>
+
+        <h3>⚙️ Core Components & Technologies</h3>
+        <ul>
+            <li><strong>Microcontroller (ESP32 / Arduino):</strong> Acts as the brain of the system, processing sensor
+                inputs and controlling outputs.</li>
+            <li><strong>RF Detector Module:</strong> Detects electromagnetic signals emitted by mobile phones.</li>
+            <li><strong>PIR Sensor (Optional Layer):</strong> Adds human presence detection for smarter filtering and
+                reduced false alerts.</li>
+            <li><strong>Buzzer & LED Indicators:</strong> Provide instant local alerts when a device is detected.</li>
+            <li><strong>IoT Connectivity (Wi-Fi):</strong> Sends real-time notifications to a monitoring system or
+                mobile device.</li>
+            <li><strong>Cloud / App Integration:</strong> Enables remote monitoring, logging, and analytics.</li>
+        </ul>
+
+        <h3>🧠 Working Principle</h3>
+        <ul>
+            <li>The RF detector continuously scans the environment for mobile signal frequencies.</li>
+            <li>When a signal is detected, it sends a HIGH signal to the microcontroller.</li>
+            <li>The microcontroller validates the signal and triggers:
+                <ul>
+                    <li>Visual alert (LED)</li>
+                    <li>Audible alert (buzzer)</li>
+                    <li>IoT notification (via Wi-Fi)</li>
+                </ul>
+            </li>
+            <li>The system can also log timestamps and detection frequency for analysis.</li>
+            <li>Optional layers (like PIR sensors) help ensure detection is relevant to human presence, improving
+                accuracy.</li>
+        </ul>
+
+        <h3>🚀 Key Features</h3>
+        <ul>
+            <li>Real-Time Detection & Alerts</li>
+            <li>Wireless Monitoring via IoT</li>
+            <li>Scalable for Large Exam Halls</li>
+            <li>Low Cost and Easy Deployment</li>
+            <li>Layered Security Approach (RF + Presence Detection)</li>
+            <li>Data Logging for Post-Exam Analysis</li>
+        </ul>
+
+        <h3>💡 Innovation & Impact</h3>
+        <p>This project goes beyond a simple detector—it creates a smart surveillance ecosystem. By combining hardware
+            sensing with IoT-based communication, the system provides both immediate alerts and long-term monitoring
+            capabilities.</p>
+        <p>It ensures:</p>
+        <ul>
+            <li>Fair examination environments</li>
+            <li>Reduced reliance on manual invigilation</li>
+            <li>Increased transparency and accountability</li>
+        </ul>
+
+        <h3>🔮 Future Enhancements</h3>
+        <ul>
+            <li>Machine learning-based signal classification to reduce false positives</li>
+            <li>Integration with CCTV systems for visual verification</li>
+            <li>Mobile app dashboard for live monitoring</li>
+            <li>Geo-fencing and zone-based detection</li>
+            <li>Cloud analytics for pattern recognition</li>
+        </ul>
+
+        <h3>🏁 Conclusion</h3>
+        <p>The Exam Phone Detector demonstrates how IoT can be applied to solve practical institutional problems
+            efficiently. It blends hardware, networking, and intelligent processing into a cohesive system that is both
+            impactful and scalable. This project reflects a strong foundation in embedded systems, IoT architecture, and
+            real-world problem-solving.</p>
+    </div>
+
+    <div id="ecg-project-details" style="display: none;">
+        <h2>🧠 ECG-Based Heart Attack Prediction Using Deep Learning</h2>
+        <p>This project focuses on building an intelligent and reliable system for early prediction of heart attacks
+            using Electrocardiogram (ECG) signals. Cardiovascular diseases remain one of the leading causes of death
+            worldwide, and timely detection plays a critical role in saving lives. The primary objective of this project
+            is to leverage deep learning techniques to analyze ECG data and identify patterns that indicate a high risk
+            of cardiac events.</p>
+
+        <h3>📊 Project Overview</h3>
+        <p>The system is designed to process raw ECG signals and automatically extract meaningful features using neural
+            networks, eliminating the need for manual feature engineering. By learning from large-scale physiological
+            datasets, the model can distinguish between normal and abnormal heart activity and predict potential heart
+            attack risks with high accuracy.</p>
+
+        <h3>💡 Motivation</h3>
+        <p>Traditional methods of heart disease detection often rely on manual interpretation by medical professionals,
+            which can be time-consuming and prone to human error. This project aims to assist healthcare systems by
+            providing a fast, scalable, and automated solution that enhances diagnostic accuracy and enables early
+            intervention.</p>
+
+        <h3>⚙️ Approach</h3>
+        <p>The project follows a structured deep learning pipeline:</p>
+        <ul>
+            <li><strong>Data Collection:</strong> ECG datasets (such as MIT-BIH or similar clinical datasets) are used.
+            </li>
+            <li><strong>Preprocessing:</strong> Noise removal, normalization, and segmentation of ECG signals to ensure
+                clean input.</li>
+            <li><strong>Feature Learning:</strong> Deep learning models (such as CNNs, LSTMs, or hybrid architectures)
+                automatically learn temporal and spatial patterns in ECG signals.</li>
+            <li><strong>Model Training:</strong> The model is trained on labeled data to classify or predict heart
+                attack risk.</li>
+            <li><strong>Evaluation:</strong> Performance is measured using metrics like accuracy, precision, recall, and
+                F1-score.</li>
+            <li><strong>Prediction System:</strong> A final interface or module that takes ECG input and outputs risk
+                predictions.</li>
+        </ul>
+
+        <h3>🚀 Key Features</h3>
+        <ul>
+            <li>Automated ECG signal analysis using deep learning</li>
+            <li>Early detection of abnormal cardiac patterns</li>
+            <li>High accuracy through data-driven learning</li>
+            <li>Scalable and adaptable to real-world healthcare systems</li>
+            <li>Potential integration with IoT or wearable devices</li>
+        </ul>
+
+        <h3>💻 Technologies Used</h3>
+        <ul>
+            <li>Python for development</li>
+            <li>Deep Learning frameworks (TensorFlow / PyTorch)</li>
+            <li>Signal processing techniques for ECG preprocessing</li>
+            <li>Data visualization and analysis tools</li>
+        </ul>
+
+        <h3>🏥 Applications</h3>
+        <ul>
+            <li>Early diagnosis of heart-related conditions</li>
+            <li>Clinical decision support systems</li>
+            <li>Integration with wearable health monitoring devices</li>
+            <li>Remote patient monitoring in telemedicine</li>
+        </ul>
+
+        <h3>🔮 Future Enhancements</h3>
+        <ul>
+            <li>Integration of explainable AI techniques (e.g., Grad-CAM) to improve trust and interpretability</li>
+            <li>Real-time ECG monitoring using IoT devices</li>
+            <li>Expansion to predict multiple cardiovascular conditions</li>
+            <li>Deployment as a web or mobile healthcare application</li>
+        </ul>
+
+        <h3>🏁 Conclusion</h3>
+        <p>This project demonstrates how artificial intelligence can significantly improve healthcare outcomes by
+            enabling early detection and continuous monitoring of heart conditions. By combining deep learning with
+            biomedical signal processing, the system has the potential to assist doctors, reduce diagnostic delays, and
+            ultimately save lives.</p>
+    </div>
+
+    <div id="petconnect-project-details" style="display: none;">
+        <h2>🐾 PetConnect – Project Overview</h2>
+        <p>PetConnect is a responsive web-based platform designed to simplify and promote pet adoption. The website acts
+            as a bridge between animal shelters and potential adopters, allowing users to explore, connect, and adopt
+            pets through an intuitive and user-friendly interface.</p>
+
+        <h3>🔹 Implementation Summary</h3>
+        <p>The project is developed using core web technologies:</p>
+        <ul>
+            <li><strong>HTML</strong> for structuring the content and layout of the website.</li>
+            <li><strong>CSS</strong> for styling, responsiveness, and modern UI design.</li>
+            <li><strong>Basic Web Design Principles</strong> to ensure accessibility and ease of navigation.</li>
+        </ul>
+
+        <h4>Key Features Implemented:</h4>
+        <ul>
+            <li>Structured homepage introducing the platform</li>
+            <li>Sections for pet listings (dogs, cats, etc.)</li>
+            <li>Clean navigation system for smooth user experience</li>
+            <li>Call-to-action elements like "Adopt Now" or "View Pets"</li>
+            <li>Responsive layout to support different screen sizes</li>
+        </ul>
+        <p>The design focuses on simplicity, ensuring that users can quickly browse available pets and understand the
+            adoption process without confusion.</p>
+
+        <h3>🔹 Use & Purpose of the Project</h3>
+        <p>PetConnect serves a meaningful real-world purpose:</p>
+        <ul>
+            <li>🐾 <strong>Promotes Pet Adoption:</strong> Encourages users to adopt rather than buy pets.</li>
+            <li>🏠 <strong>Connects Shelters & Users:</strong> Provides a digital platform for shelters to showcase
+                animals.</li>
+            <li>💡 <strong>Raises Awareness:</strong> Highlights the importance of animal welfare and responsible
+                adoption.</li>
+            <li>🌐 <strong>Accessible Platform:</strong> Makes adoption information easily available online.</li>
+        </ul>
+
+        <h3>🔹 Impact & Future Scope</h3>
+        <p>This project can be further expanded by integrating:</p>
+        <ul>
+            <li>Backend systems (e.g., user login, adoption requests)</li>
+            <li>Database for real-time pet listings</li>
+            <li><strong>AI-based pet recommendation system</strong> (this would make your project stand out big time!)
+            </li>
+            <li>Chat or contact system between adopters and shelters</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://github.com/DNR5995" aria-label="GitHub" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/deva-nandan-rajeevan-b524833a9" aria-label="LinkedIn"
+                    target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p>&copy; 2026 Deva Nandan R</p>
+        </div>
+    </footer>
+
+    <!-- App JS -->
+    <script>
+        // Simple JS for Mobile Menu and Sticky Navbar, strictly for interaction
+        const navbar = document.querySelector('.navbar');
+        const hamburger = document.querySelector('.hamburger');
+        const navLinksList = document.querySelector('.nav-links');
+
+        // Sticky Nav logic
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Hamburger Menu Toggle
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinksList.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-links li a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinksList.classList.remove('active');
+            });
+        });
+
+        // Modal Logic
+        const modal = document.getElementById('project-modal');
+        const modalBody = document.getElementById('modal-body');
+        const closeModal = document.querySelector('.close-modal');
+
+        function openModal(contentId) {
+            const content = document.getElementById(contentId).innerHTML;
+            modalBody.innerHTML = content;
+            modal.style.display = 'flex';
+            setTimeout(() => { modal.classList.add('show'); }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        closeModal.onclick = function () {
+            modal.classList.remove('show');
+            setTimeout(() => { modal.style.display = 'none'; }, 300);
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                closeModal.onclick();
+            }
+        }
+    </script>
+</body>
+
+</html>

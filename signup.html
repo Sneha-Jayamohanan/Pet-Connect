@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up — PetConnect</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="auth.css"/>
+</head>
+<body style="cursor:auto;">
+
+<div class="auth-page">
+
+  <!-- Left visual -->
+  <div class="auth-visual">
+    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&q=85&fit=crop" alt="dog"/>
+    <div class="auth-visual-overlay">
+      <div class="auth-visual-quote">
+        A dog is the only thing<br/>that loves you more than<br/><em>yourself.</em>
+      </div>
+      <div class="auth-visual-sub">Join thousands of happy pet owners on PetConnect.</div>
+    </div>
+  </div>
+
+  <!-- Right form -->
+  <div class="auth-form-panel">
+    <div class="auth-form-inner">
+
+      <div class="auth-logo">
+        <div class="auth-logo-icon">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=72&q=80&fit=crop" alt="logo"/>
+        </div>
+        PetConnect
+      </div>
+
+      <h2 class="auth-title">Create Account</h2>
+      <p class="auth-subtitle">Free forever. No credit card needed.</p>
+
+      <form id="signupForm" novalidate>
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" placeholder="Your full name" autocomplete="name"/>
+          <span class="form-error" id="nameErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email Address</label>
+          <input type="email" id="signupEmail" placeholder="abc@email.com" autocomplete="email"/>
+          <span class="form-error" id="emailErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" placeholder="At least 6 characters" autocomplete="new-password"/>
+          <span class="form-error" id="passErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="signupConfirm">Confirm Password</label>
+          <input type="password" id="signupConfirm" placeholder="Repeat your password" autocomplete="new-password"/>
+          <span class="form-error" id="confirmErr"></span>
+        </div>
+        <button type="submit" class="btn btn-forest btn-submit">Create My Account →</button>
+      </form>
+
+
+
+      <div class="form-footer-link" style="margin-top:20px;">
+        Already have an account? <a href="login.html">Sign In</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
