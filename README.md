@@ -2,6 +2,7 @@
 
 ![PetConnect Banner](https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&q=80&fit=crop)
 
+
 ## Overview
 
 PetConnect is a multi-page pet adoption web application developed using HTML, CSS, and JavaScript. The platform enables users to browse pets, explore detailed profiles, and submit adoption applications through a responsive and interactive interface.
