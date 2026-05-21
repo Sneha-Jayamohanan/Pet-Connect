@@ -1,4 +1,4 @@
-# 🐾 PetConnect — Digital Pet Adoption Platform
+#  PetConnect — Digital Pet Adoption Platform
 
 > A modern, 3D-styled pet adoption web application built with pure HTML, CSS, and JavaScript. No frameworks. No dependencies. Just open and run.
 
